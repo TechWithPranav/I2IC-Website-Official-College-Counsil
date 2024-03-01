@@ -1,0 +1,4 @@
+--------i2ic changes------
+- navbar color change
+- logo make transparent
+- footer coolor make dark blue
