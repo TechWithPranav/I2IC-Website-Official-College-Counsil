@@ -1,1 +1,0 @@
-# I2IC-Website-Official-College-Counsil
