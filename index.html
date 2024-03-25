@@ -13,6 +13,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
   integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
+
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous"> -->
   
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.5/slick.min.css'><link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="style.css">
@@ -95,86 +97,129 @@
 
 
 
-  <section id="carouse">
-    <!-- <div class="gif_content">
-        <img src="happy-student-with-graduation-hat-diploma-grey_231208-12979.jpg" class="img_carosal" alt="" srcset="">
+  <!-- ------------------- carosal --------------------------  -->
+
+<div class="d-flex">
+
+      <div id="main_carose" class="container "  style="width: 100%;height: 50%; margin: 0;padding: 0;">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" style="margin-left: 0px;height: 20%;">
+      <div class="carousel-inner"  >
+        <div class="carousel-item active">
+          <img src="images/img1.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/img2.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/img3.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  
+  
+
+  
+  
+  
+  
+<!--   
+    <div id="main-anoun2">
+      <div id="anouncement-main">
+        <div class="announcement-header">
+          <h2>Announcements</h2>
+        </div>
+        <marquee id="main_scroller" scrollamount="infinite" onmouseover="this.stop();" onmouseout="this.start();"
+          direction="up" scrolldelay="150" height="200px">
+          <div class="media latestNewsMedia">
+  
+            <ul>
+              <li>
+                <h3>Event 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#">Show more</a>
+  
+              </li>
+              <li>
+                <h3>Event 2</h3>
+                <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href=".announcement-container">Show more</a>
+              </li>
+              <li>
+                <h3>Event 3</h3>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                <a href="#">Show more</a>
+              </li>
+              <li>
+                <h3>Event 4</h3>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+                <a href="#">Show more</a>
+              </li>
+            </ul>
+  
+        </marquee>
+  
+      </div>
     </div> -->
+  
+    <div id="main_announce" style="width: 30%;display: flex;  height: 580px; justify-content: center;align-content: center;align-items: center;" >
+    <div class="card border-danger mb-3" style="max-width: 28rem;/*margin-left: 6em;*/height: 24em; ">
+      <div class="card-header" style=" font-weight: bolder;font-size: 32px;">Announcements</div>
+      <marquee direction="up" scrollamount="3" behavior="scroll" class="announcement-marquee">
+        <ul class="list-group">
+            <li class="list-group-item">
+                <div class="d-flex justify-content-between align-items-center" style="flex-direction: column;">
+                    <div >
+                        <h3 class="mb-0" style=" color: #4CAF50; margin-bottom: 20px; font-size: 25px;">Event 1</h3>
+                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="d-flex justify-content-start w-100">
+                    <a href="#" class=" ">Show more</a>
+                  </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+              <div class="d-flex justify-content-between align-items-center" style="flex-direction: column;">
+                  <div >
+                      <h3 class="mb-0" style=" color: #4CAF50; margin-bottom: 20px; font-size: 25px;">Event 2</h3>
+                      <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                  <div class="d-flex justify-content-start w-100">
+                  <a href="#" class=" ">Show more</a>
+                </div>
+              </div>
+          </li><li class="list-group-item">
+            <div class="d-flex justify-content-between align-items-center" style="flex-direction: column;">
+                <div >
+                    <h3 class="mb-0" style=" color: #4CAF50; margin-bottom: 20px; font-size: 25px;">Event 3</h3>
+                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="d-flex justify-content-start w-100">
+                <a href="#" class=" ">Show more</a>
+              </div>
+            </div>
+        </li>
+            <!-- Add more list items as needed -->
+        </ul>
+    </marquee>
     
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="images/img1.png" class="d-block w-60 h-35 img_carosal" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="images/img2.png" class="d-block w-60 h-35 img_carosal" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="images/img3.png" class="d-block w-60 h-35  img_carosal" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-
-
-
-
-
-          <div id="main-anoun2">
-         
-          <div id="anouncement-main">
-            <div class="announcement-header">
-                <h2>Announcements</h2>
-            </div>
-            <marquee id="main_scroller" scrollamount="infinite" onmouseover="this.stop();" onmouseout="this.start();" direction="up" scrolldelay="150" height="200px">
-                <div class="media latestNewsMedia">
-                   
-                    <ul>
-                        <li>
-                            <h3>Event 1</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <a href="#">Show more</a>
-                           
-                        </li>
-                        <li>
-                            <h3>Event 2</h3>
-                            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <a href=".announcement-container">Show more</a>
-                        </li>
-                        <li>
-                            <h3>Event 3</h3>
-                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-                            <a href="#">Show more</a>
-                        </li>
-                        <li>
-                            <h3>Event 4</h3>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                            <a href="#">Show more</a>
-                        </li>
-                    </ul>
-        
-                </marquee>
-        
-            </div>
-          </div>
     
-</section>
+       
+    </div>
+  </div>
 
 
 
-
-
-
-
-
-
-
+  </div>
 
 
 
@@ -202,7 +247,7 @@
         </a>
       </div>
       <div class="videoContainer">
-        <iframe allowfullscreen="allowfullscreen" class="mainVideo" controls="controls" src="images/Untitled video - Made with Clipchamp (1).mp4">
+        <!-- <iframe allowfullscreen="allowfullscreen" class="mainVideo" controls="controls" src="images/Untitled video - Made with Clipchamp (1).mp4"> -->
         </iframe>
         <img class="dotsImg image-block" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/cw3.svg">
       </div>
