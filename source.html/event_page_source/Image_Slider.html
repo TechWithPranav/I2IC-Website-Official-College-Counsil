@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"><link rel="stylesheet" href="./style.css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway:600,900" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
+  
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.5/slick.min.css'><link rel="stylesheet" href="./style.css">
+ 
+    <link rel="stylesheet" href="../../css/SliderCss.css">
+    <link rel="stylesheet" href="../../css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../css/indexCss.css" />
+
+    <style>
+        .heading{
+    text-align: center;
+    color:#222f3e;
+}
+.heading span{
+    background: #17a8dc;
+    display: inline-block;
+    padding:.5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%,100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+    </style>
+
+</head>
+<body>
+    
+<!-- ---------------------------Navigation section ---------------------------  -->
+  <section class="navigation">
+    <div class="brand">
+      <a href="#!"><img id="logo_img" src="../../images/home_page_image/logo.jpg" alt="" srcset=""></a>
+    </div>
+    <div class="nav-container">
+      <div id="nav-main">
+        <nav>
+          <div class="nav-mobile"><a id="navbar-toggle" href="#!"><span></span></a></div>
+          <ul class="nav-list">
+            <li>
+              <a href="">HOME</a>
+            </li>
+            <li>
+              <a href="#!">ABOUT US</a>
+            </li>
+            <li>
+              <a href="#!">EVENTS</a>
+              <ul class="navbar-dropdown">
+                <li>
+                  <a href="#!">Sass</a>
+                </li>
+                <li>
+                  <a href="#!">Less</a>
+                </li>
+                <li>
+                  <a href="#!">Stylus</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#!">PLACEMENT DATA</a>
+              <ul class="navbar-dropdown">
+                <li>
+                  <a href="#!">top</a>
+                </li>
+                <li>
+                  <a href="#!">Less</a>
+                </li>
+                <li>
+                  <a href="#!">Stylus</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#!">EXPERIENCE</a>
+            </li>
+
+            <li>
+              <a href="#!">CONTACT US</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </section>
+ 
+<!-- ---------------------------Slider section ---------------------------  -->
+
+<div class="slider">
+  <div class="slide" id="slide1">
+      <img src="../../images/events_page/Nichhay.jpg" alt="Slide 1">
+      <div class="content">
+        <!--<h2></h2>
+          <p></p>--> 
+      </div>
+  </div>
+  <div class="slide" id="slide2">
+      <img src="../../images/events_page/Agile.jpg" alt="Slide 2">
+      <div class="content">
+         <!-- <h2>Slide2</h2>
+          <p>This is the content of Slide 2.</p>-->
+      </div>
+  </div>
+  <div class="slide" id="slide3">
+      <img src="../../images/events_page/TCS.jpg" alt="Slide 3">
+      <div class="content">
+          <!-- <h2>Slide 3</h2>
+          <p>This is the content of Slide 3.</p>-->
+      </div>
+  </div>
+  
+  <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+  <a class="next" onclick="changeSlide(1)">&#10095;</a>
+</div>
+
+<script>
+
+  let currentSlide = 1;
+ const slides = document.querySelectorAll('.slide');
+ const slideCount = slides.length;
+ 
+ function showSlide(n) {
+   if (n > slideCount) { currentSlide = 1; }
+   if (n < 1) { currentSlide = slideCount; }
+   
+   slides.forEach(slide => slide.style.display = 'none');
+   slides[currentSlide - 1].style.display = 'block';
+ }
+ 
+ function changeSlide(n) {
+   showSlide(currentSlide += n);
+ }
+ 
+ function autoSlide() {
+   changeSlide(1);
+   setTimeout(autoSlide, 5000); // Change slide every 5 seconds (adjust as needed)
+ }
+ 
+ autoSlide(); // Start automatic sliding
+ 
+ </script>
+ 
+
+<!-- Card Slider 1-->
+
+<div class="heading" >
+  <h2 > Our Events <span>2022-23</span></h1>
+</div>
+<div class="containerSlider swiper">
+  <div class="slide-container">
+    <div class="card-wrapper swiper-wrapper">
+
+      <div class="card swiper-slide">
+        <div class="image-box">
+          <a href="Sam_Wid_Sarthi.html"><img src="../../images/events_page/Day_1.JPG" alt="" /></a>
+        </div>
+        <div class="profile-details">
+          <!--<img src="images/profile/profile2.jpg" alt="" />-->
+          <div class="name-job">
+            <h3 class="name"><b>Samwid Saarthi Angel</b></h3>
+            <h4 class="job">31st March 2023 and 1st April 2023</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="card swiper-slide">
+        <div class="image-box">
+       <a href="Event_Info5.html"><img src="../../images/events_page/USB.png" alt="" /></a>
+        </div>
+        <div class="profile-details">
+          <!--<img src="images/profile/profile1.jpg" alt="" />-->
+          <div class="name-job">
+            <h3 class="name"><b>Session On Wolters Kluwer</b> </h3>
+            <h4 class="job">7th December 2022</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="card swiper-slide">
+        <div class="image-box">
+          <a href="Event_Info5.html"><img src="../../images/events_page/USB.png" alt="" /></a>
+        </div>
+        <div class="profile-details">
+          <!--<img src="images/profile/profile2.jpg" alt="" />-->
+          <div class="name-job">
+            <h3 class="name"><b>MindTree Alumini Coffee Meet</b></h3>
+            <h4 class="job">9th December 2022</h4>
+          </div>
+        </div>
+      </div>
+      <div class="card swiper-slide">
+        <div class="image-box">
+           <a href="Event_Info5.html"><img src="../../images/events_page/images/USB.png" alt="" ></a>
+        </div>
+        <div class="profile-details">
+          <!--<img src="images/profile/profile3.jpg" alt="" />-->
+          <div class="name-job">
+            <h3 class="name"><b>UBS Session</b></h3>
+            <h4 class="job">21st April 2023</h4>
+          </div>
+        </div>
+      </div>
+      <div class="card swiper-slide">
+        <div class="image-box">
+          <a href="Event_Info6.html">  <img src="../../images/events_page/images/AI_ML.JPG" alt="" /></a>
+        </div>
+        <div class="profile-details">
+          <!--<img src="images/profile/profile4.jpg" alt="" />-->
+          <div class="name-job">
+            <h3 class="name"><b >AI and ML Hands On Workshop</b></h3>
+            <h4 class="job">14 October and 15 October 2022</h4>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card swiper-slide">
+        <div class="image-box">
+          <a href="Event_Info6.html">  <img src="../../images/events_page/LT_Industry_Visit_22.jpeg" alt="" /></a>
+        </div>
+        <div class="profile-details">
+          <!--<img src="images/profile/profile4.jpg" alt="" />-->
+          <div class="name-job">
+            <h3 class="name"><b>LTIMindTree Industry Visit</b></h3>
+            <h4 class="job">9th March 2023</h4>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="swiper-button-next swiper-navBtn"></div>
+  <div class="swiper-button-prev swiper-navBtn"></div>
+  <div class="swiper-pagination"></div>
+</div>
+
+<script src="../../js/swiper-bundle.min.js"></script>
+<script src="../../js/script1.js"></script>
+
+
+<!-- Card Slider 2-->
+<div class="heading" >
+    <h2 >Our Events <span>2023-24</span></h1>
+</div>
+<div class="containerSlider swiper">
+    <div class="slide-container">
+      <div class="card-wrapper swiper-wrapper">
+        <div class="card swiper-slide">
+          <div class="image-box">
+         <a href="Event_Info1.html"><img src="../../images/events_page/BMC (1).jpg" alt="" /></a>
+          </div>
+          <div class="profile-details">
+            <!--<img src="images/profile/profile1.jpg" alt="" />-->
+            <div class="name-job">
+              <h3 class="name"><b>BMC Event</b> </h3>
+              <h4 class="job">23rd January 2024</h4>
+            </div>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-box">
+            <a href="Event_Info1.html"><img src="../../images/events_page/Nichhay.jpg" alt="" /></a>
+          </div>
+          <div class="profile-details">
+            <!--<img src="images/profile/profile2.jpg" alt="" />-->
+            <div class="name-job">
+              <h3 class="name"><b>Nichhay Event</b></h3>
+              <h4 class="job">13th December 2023</h4>
+            </div>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-box">
+             <a href="Event_Info4.html"><img src="../../images/events_page/Agile.jpg" alt="" ></a>
+          </div>
+          <div class="profile-details">
+            <!--<img src="images/profile/profile3.jpg" alt="" />-->
+            <div class="name-job">
+              <h3 class="name"><b>Agile Foundation Event</b></h3>
+              <h4 class="job">2nd November 2023</h4>
+            </div>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-box">
+            <a href="Event_Info1.html">  <img src="../../images/events_page/Tcs .png" alt="" /></a>
+          </div>
+          <div class="profile-details">
+            <!--<img src="images/profile/profile4.jpg" alt="" />-->
+            <div class="name-job">
+              <h3 class="name"><b >TCS Guest speaker Session</b></h3>
+              <h4 class="job">18th August 2023</h4>
+            </div>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-box">
+           <a href="Event_Info3.html"> <img src="../../images/events_page/TSP.jpg" alt="" /></a>
+          </div>
+          <div class="profile-details">
+            <!--<img src="images/profile/profile5.jpg" alt="" />-->
+            <div class="name-job">
+              <h3 class="name"><b>TSP Event</b></h3>
+              <h4 class="job">30th October to 4th November 2023</h4>
+            </div>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-box">
+            <a href="Event_Info3.html">  <img src="../../images/events_page/Resume_Building_card.jpg" alt="" /></a>
+          </div>
+          <div class="profile-details">
+            <!--<img src="images/profile/profile4.jpg" alt="" />-->
+            <div class="name-job">
+              <h3 class="name"><b>Resume Building Session</b></h3>
+              <h4 class="job">28th October 2023</h4>
+            </div>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-box">
+            <a href="Event_Info2.html">  <img src="../../images/events_page/Mentor_To_Go_Card.jpg" alt="" /></a>
+          </div>
+          <div class="profile-details">
+            <!--<img src="images/profile/profile4.jpg" alt="" />-->
+            <div class="name-job">
+              <h3 class="name"><b >Mentor To Go</b></h3>
+              <h4 class="job">10th October 2023</h4>
+            </div>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-box">
+            <a href="Event_Info2.html">  <img src="../../images/events_page/LTIMindtree_card.PNG" alt="" /></a>
+          </div>
+          <div class="profile-details">
+            <!--<img src="images/profile/profile4.jpg" alt="" />-->
+            <div class="name-job">
+              <h3 class="name"><b >LTIMindTree Industry Visit</b></h3>
+              <h4 class="job">28th February 2024</h4>
+            </div>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-box">
+            <a href="Event_Info3.html">  <img src="../../images/events_page/Generative_AI.PNG" alt="" /></a>
+          </div>
+          <div class="profile-details">
+            <!--<img src="images/profile/profile4.jpg" alt="" />-->
+            <div class="name-job">
+              <h3 class="name"><b >Generative AI Workshop</b></h3>
+              <h4 class="job">27th July 2023</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-next swiper-navBtn"></div>
+    <div class="swiper-button-prev swiper-navBtn"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <script src="../../js/swiper-bundle.min.js"></script>
+  <script src="../../js/script.js"></script>
+
+
+<!-- ---------------------------footer section ---------------------------  -->
+
+<footer class="footer-section">
+  <div class="container">
+      <div class="footer-cta pt-5 pb-5">
+          <div class="row">
+              <div class="col-xl-4 col-md-4 mb-30">
+                  <div class="single-cta">
+                    <i class="fas fa-map-marker-alt"></i> 
+                    <!-- <div class="cta-text" style="position: relative;left: 20px;top: -35px;"> -->
+                    <div class="cta-text">
+                        <h4>Find us</h4>
+                          <!-- <span>VIIT Survey No. 3/4, Kondhwa (Budruk)
+                            Pune – 411048, Maharashtra (India)</span> -->
+                          <span>VIIT Survey No. 3/4, Kondhwa (Budruk)
+                            </span>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-md-4 mb-30">
+                  <div class="single-cta">
+                      <i class="fas fa-phone"></i>
+                      <div class="cta-text">
+                          <h4>Call us</h4>
+                          <span>9876543210 0</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-md-4 mb-30">
+                  <div class="single-cta">
+                      <i class="far fa-envelope-open"></i>
+                      <div class="cta-text">
+                          <h4>Mail us</h4>
+                          <span>mail@info.com</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="footer-content pt-5 pb-5">
+          <div class="row">
+              <div class="col-xl-4 col-lg-4 mb-50">
+                  <div class="footer-widget">
+                      <div class="footer-logo">
+                          <a href="index.html"><img src="../../images/home_page_image/logo.jpg" style="width: 40%;" class="img-fluid" alt="logo"></a>
+                      </div>
+                      <div class="footer-text">
+                          <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                          elit,Lorem ipsum dolor sit amet.</p>
+                      </div>
+                      <div class="footer-social-icon">
+                          <span>Follow us</span>
+                          <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                          <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                          <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                  <div class="footer-widget">
+                      <div class="footer-widget-heading">
+                          <h3>Useful Links</h3>
+                      </div>
+                      <ul>
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">About</a></li>
+                          <li><a href="#">Placement</a></li>
+                          <li><a href="#">Events</a></li>
+                          <li><a href="#">Contact</a></li>
+                          <li><a href="#">Portfolio</a></li>
+                          <li><a href="#">Our Services</a></li>
+                          <li><a href="#">Expert Team</a></li>
+                          <li><a href="#">Contact us</a></li>
+                          <li><a href="#">Latest News</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                  <div class="footer-widget">
+                      <div class="footer-widget-heading">
+                          <h3>Subscribe</h3>
+                      </div>
+                      <div class="footer-text mb-25">
+                          <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                      </div>
+                      <div class="subscribe-form">
+                          <form action="#">
+                              <input type="text" placeholder="Email Address">
+                              <button><i class="fab fa-telegram-plane"></i></button>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="copyright-area">
+      <div class="container">
+          <div class="row">
+              <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                  <div class="copyright-text">
+                      <p>Copyright &copy; I2IC. All rights reserved</p>
+                  </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                  <div class="footer-menu">
+                      <ul>
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">Terms</a></li>
+                          <li><a href="#">Privacy</a></li>
+                          <li><a href="#">Policy</a></li>
+                          <li><a href="#">Contact</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+  
+
+
+
+
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+  crossorigin="anonymous"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.5/slick.min.js'></script>
+    <script src="./script.js"></script>
+</body>
+</html>
