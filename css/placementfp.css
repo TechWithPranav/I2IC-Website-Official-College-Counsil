@@ -10,80 +10,7 @@
     margin: 0;
     padding: 0;
   }
-  nav{
-    background: #337EC2;
-    height: 80px;
-    width: 100%;
-    align-items: center;
-  }
-  
-  nav ul{
-    float: right;
-    margin-right: 20px;
-  }
-  nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-  }
-  nav ul li a{
-    color: white;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
-  }
-  /* .checkbtn{
-    font-size: 30px;
-    color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-  } */
-  #check{
-    display: none;
-  }
-  @media (max-width: 952px){
-    label.logo{
-      font-size: 30px;
-      padding-left: 50px;
-    }
-    nav ul li a{
-      font-size: 16px;
-    }
-  }
-  @media (max-width: 858px){
-    .checkbtn{
-      display: block;
-    }
-    ul{
-      position: fixed;
-      width: 100%;
-      height: 100vh;
-      background: #2c3e50;
-      top: 80px;
-      left: -100%;
-      text-align: center;
-      transition: all .5s;
-    }
-    nav ul li{
-      display: block;
-      margin: 50px 0;
-      line-height: 30px;
-    }
-    nav ul li a{
-      font-size: 20px;
-    }
-    a:hover,a.active{
-      background: none;
-      color: #0082e6;
-    }
-    #check:checked ~ ul{
-      left: 0;
-    }
-  }
+
   @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
   * {
     padding: 0;
@@ -402,10 +329,9 @@ tr:hover {
     /* border-radius: 2%; */
 }
 
-.logos {
+/* .logos {
   overflow: hidden;
   padding: 40px;
-  /* background: linear-gradient(0.3deg, rgb(30, 161, 239) 0.9%, rgb(49, 46, 252) 88.6%); */
   white-space: nowrap;
   position: relative;
 }
@@ -414,11 +340,11 @@ tr:hover {
 .logos:after {
   position: absolute;
   top: 0;
-  width: 100%; /* Adjust this width as needed */
+  width: 100%; 
   height: 100%;
   content: "";
   z-index: 2;
-}
+} */
 
 .hidden{
   /* opacity: 0; */
@@ -621,8 +547,8 @@ h2 a {
     transition: all .5s ease;
   }
   a.active,a:hover{
-    border-left: 5px solid #b93632;
-    color: #b93632;
+    /* border-left: 5px solid #b93632;
+    color: #b93632; */
   }
   .sidebar a i{
     font-size: 23px;
